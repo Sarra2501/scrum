@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demande de Service - Sprint 2</title>
+    <style>
+        body {
+            background-color: #50C878; /* Emerald green */
+            color: white; /* White text for contrast */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: white;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="file"], input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        input[type="submit"] {
+            background-color: white;
+            color: #50C878;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a05a; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Demande de Service</h1>
+    <form>
+        <label for="photo">Photo de votre meuble :</label>
+        <input type="file" id="photo" name="photo">
+        
+        <label for="description">Détails :</label>
+        <textarea id="description" name="description" placeholder="Décrivez votre meuble"></textarea>
+
+        <input type="submit" value="Publier Demande">
+    </form>
+
+    <h2>Proposition de Service</h2>
+    <form>
+        <label for="proposal">Proposition :</label>
+        <textarea id="proposal" name="proposal" placeholder="Votre proposition"></textarea>
+
+        <label for="quote">Prix :</label>
+        <input type="text" id="quote" name="quote" placeholder="Entrez le prix">
+
+        <input type="submit" value="Envoyer Proposition">
+    </form>
+</body>
+</html>
